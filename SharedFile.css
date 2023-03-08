@@ -1,0 +1,71 @@
+@font-face{
+    font-family: "Anton";
+    src: url("/Fonts/Anton/Anton-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: rebeccapurple;
+}
+
+body{
+    background: #0d0d0d;
+    padding-bottom: 6.5rem;
+}
+
+#NavBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 10000;
+    align-items: flex-end;
+}
+
+
+.BarLink {
+    padding: 2rem;
+    font-size: 22px;
+    color: white;
+    background: #1a1a1a;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.BarLink:hover{
+    background: red;
+    padding-bottom: 6rem;
+}
+
+.BarLink:hover .Icon{
+    background-color:rgb(14, 173, 185);
+}
+
+.BarSpan {
+    font-family: "Anton";
+}
+.Icon{
+    height: 40px;
+    width: 40px;
+    background: #ff1f ;
+}
